@@ -1,0 +1,63 @@
+.forgetPwd_page {
+  width: 100%;
+  height: auto;
+  min-height: 65%;
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+
+  .forgetPwd_container {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    padding: 3% 0;
+    display: flex;
+    justify-content: center;
+
+    .forgetPwd_box {
+      width: 35%;
+      min-width: 450px;
+      height: auto;
+      margin-top: 5%;
+
+      .forgetPwd_title_txt {
+        font-size: 2.5rem;
+        margin: 0 0 30px 0;
+      }
+
+      .forgetPwd_info_box {
+        width: 100%;
+        height: auto;
+
+        .forgetPwd_email_box {
+          width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+
+          .forgetPwd_email_title_txt {
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+          }
+
+          .email_info_input {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            padding: 0 20px;
+            font-size: 1.6rem;
+            background-color: burlywood;
+          }
+        }
+      }
+
+      .forget_submit {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

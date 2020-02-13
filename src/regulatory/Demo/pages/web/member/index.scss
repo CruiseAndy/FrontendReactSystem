@@ -1,0 +1,17 @@
+.member_page {
+  width: 100%;
+  height: auto;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .member_container {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    min-height: 600px;
+    display: flex;
+    padding: 20px 0;
+  }
+}

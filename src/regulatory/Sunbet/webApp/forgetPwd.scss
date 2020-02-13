@@ -1,0 +1,29 @@
+@import "../colorConfig/forgetPwd.scss";
+
+.forgetPwd_page {
+  .forgetPwd_container {
+    .forgetPwd_box {
+      .forgetPwd_title_txt {
+        color: $forget-pwd-title-txt;
+      }
+
+      .forgetPwd_info_box {
+        .forgetPwd_email_box {
+          .forgetPwd_email_title_txt {
+            color: $forget-pwd-input-title-txt;
+          }
+
+          .email_info_input {
+            background-color: $forget-pwd-input-bg;
+            color: $forget-pwd-input-txt;
+          }
+        }
+      }
+
+      .forget_submit {
+        background-color: $forget-pwd-submit-btn-bg;
+        color: $forget-pwd-submit-btn-txt;
+      }
+    }
+  }
+}

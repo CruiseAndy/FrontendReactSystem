@@ -1,0 +1,139 @@
+@import "../colorConfig/register.scss";
+
+.register_page {
+  .register_container {
+    .process_step_box {
+      .step_group, .mobile_step_group {
+        .step_box {
+          background-color: $register-step-bg;
+
+          &.active1 {
+            background-color: $register-step1-active-bg;
+          }
+
+          &.active2 {
+            background-color: $register-step2-active-bg;
+          }
+
+          &.active3 {
+            background-color: $register-step3-active-bg;
+          }
+
+          .step_num {
+            color: $register-step-txt;
+          }
+
+          .hr {
+            border-right: $register-step-hr;
+          }
+
+          .step_txt {
+            color: $register-step-txt;
+          }
+        }
+
+        .step1_triangle {
+          border-color: transparent transparent transparent $register-step1-active-bg;
+        }
+
+        .step2_triangle {
+          border-color: transparent transparent transparent $register-step2-active-bg;
+        }
+
+        .step3_triangle {
+          border-color: transparent transparent transparent $register-step3-active-bg;
+        }
+      }
+    }
+
+    .process_info_container {
+      .process_info_title {
+        color: $register-info-title-txt;
+      }
+
+      .user_email_txt {
+        color: $register-user-email-txt;
+      }
+
+      .info_input_box {
+        .input_box {
+          border-bottom: $register-info-input-border;
+
+          input {
+            background-color: transparent;
+            color: $register-info-input-txt;
+
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+              color: $register-info-input-placeholder;
+            }
+            
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+              color: $register-info-input-placeholder;
+            }
+            
+            &::-ms-input-placeholder { /* Microsoft Edge */
+              color: $register-info-input-placeholder;
+            }
+          }
+
+          &.wrong {
+            border-bottom: $register-info-input-wrong-border;
+          }
+        }
+
+        .wrong_txt {
+          color: $register-info-wrong-txt;
+        }
+      }
+
+      .agree_terms_container {
+        .agree_icon_box {
+          background-color: $register-agree-icon-bg;
+
+          .icon_agree {
+            color: $register-agree-icon;
+          }
+        }
+
+        .agree_txt_box {
+          .agree_txt {
+            color: $register-terms-txt;
+          }
+
+          .agree_link_txt {
+            color: $register-terms-link-txt;
+          }
+        }
+      }
+
+      .register_submit_btn {
+        background-color: $register-submit-btn-bg;
+        color: $register-submit-btn-txt;
+      }
+
+      .verify_input {
+        .resend_btn {
+          background-color: $register-resend-verify-code-btn-bg;
+          color: $register-resend-verify-code-btn-txt;
+          border: $register-resend-verify-code-btn-border;
+        }
+      }
+
+      .user_email_box {
+        .modify_email_btn {
+          background-color: $register-modify-email-btn-bg;
+          color: $register-modify-email-btn-txt;
+        }
+      }
+
+      .btn_box {
+
+        .resend_btn {
+          background-color: $register-resend-verify-code-btn-bg;
+          color: $register-resend-verify-code-btn-txt;
+          border: $register-resend-verify-code-btn-border;
+        }
+      }
+    }
+  }
+}

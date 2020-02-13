@@ -1,0 +1,40 @@
+.mobile_home_page {
+  width: 100%;
+  height: auto;
+  
+  .home_page {
+    padding: 0;
+    padding-top: 60px;
+  
+    .home_container {
+      display: block;
+  
+      .casino_section {
+        width: 100%;
+  
+        .casino_games_box {
+          .game_box {
+            width: 49%;
+  
+            .game_title {
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+  
+      .other_section {
+        width: 100%;
+  
+        .home_banner {
+          display: none;
+  
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

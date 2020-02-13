@@ -1,0 +1,50 @@
+.rationalBetting_page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+
+  .rationalBetting_page_container {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    padding: 3% 0;
+
+    .rationalBetting_title {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: #c12d2e;
+    }
+
+    .rationalBetting_desc {
+      font-size: 1.5rem;
+      letter-spacing: .15rem;
+    }
+
+    .rationalBetting_section {
+      width: auto;
+      height: auto;
+      margin: 35px 0;
+
+      .rationalBetting_section_title {
+        font-size: 2rem;
+      }
+
+      .rationalBetting_section_list_li {
+        font-size: 1.4rem;
+        margin-left: 10px;
+      }
+
+      a {
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+
+      .rationalBetting_section_desc {
+        font-size: 1.5rem;
+        letter-spacing: .15rem;
+      }
+    }
+  }
+}

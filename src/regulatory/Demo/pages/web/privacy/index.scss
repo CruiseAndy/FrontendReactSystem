@@ -1,0 +1,51 @@
+.privacy_page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+
+  .privacy_page_container {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    padding: 3% 0;
+
+    .privacy_title {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: #c12d2e;
+    }
+
+    .privacy_desc {
+      font-size: 1.5rem;
+      letter-spacing: .15rem;
+    }
+
+    .privacy_section {
+      width: auto;
+      height: auto;
+      margin: 35px 0;
+
+      .privacy_section_title {
+        font-size: 2rem;
+      }
+
+      .privacy_section_desc {
+        font-size: 1.5rem;
+        letter-spacing: .15rem;
+      }
+
+      .privacy_section_notice {
+        font-size: 1.5rem;
+        letter-spacing: .05rem;
+      }
+
+      .privacy_section_notice_li {
+        font-size: 1.4rem;
+        margin-bottom: 3px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

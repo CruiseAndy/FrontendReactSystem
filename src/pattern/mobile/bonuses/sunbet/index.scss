@@ -1,0 +1,150 @@
+.mobile_bonuses_pattern {
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+
+  .bonuses_container {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .bonuses_box {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+
+      .summary_box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+
+        .bonuses_img {
+          width: 100%;
+          height: auto;
+
+          img {
+            width: 100%;;
+            height: auto;
+          }
+        }
+      }
+
+      .bonuses_status {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        .no_apply_box {
+          width: 48%;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          .icon_box {
+            width: 22px;
+            height: 22px;
+            border-radius: 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+  
+            .no_apply_icon {
+              font-size: 1.5rem;
+            }
+          }
+  
+          .no_apply_txt {
+            font-size: 1.5rem;
+          }
+        }
+        
+        .detail_btn_box {
+          width: 48%;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          .detail_btn_txt {
+            font-size: 1.5rem;
+          }
+  
+          .detail_btn_icon {
+            position: absolute;
+            top: 20%;
+            right: 8%;
+            font-size: 2rem;
+            transition: all .3s ease-out;
+  
+            &.turn {
+              transform: rotate(180deg);
+            }
+          }
+        }
+  
+        .manual_apply_btn {
+          width: 48%;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+        }
+  
+        .contact_status {
+          width: 48%;
+          text-align: center;
+          font-size: 1.5rem;
+          margin: 0;
+        }
+      }
+
+      .detail_box {
+        width: 100%;
+        height: auto;
+        max-height: 0;
+        transition: all .3s ease-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &.show_detail {
+          max-height: 1200px;
+          overflow-y: auto;
+        }
+
+        .detail_title {
+          margin-top: 40px;
+          margin-bottom: 15px;
+          font-size: 2.5rem;
+        }
+
+        .detail_activity_time {
+          margin-bottom: 15px;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

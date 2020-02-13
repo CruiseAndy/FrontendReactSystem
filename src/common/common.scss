@@ -1,0 +1,167 @@
+/* 
+ * Created by kevin in 2018/01/02
+ */
+
+* {
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 36px;
+    color: #333;
+    border: 1px solid #999;
+    padding: 0 10px;
+}
+
+@mixin Common-BtnStep (
+    $fontSize: 24px, $width: 100%, $height: 50px, $count: 1,
+    $color: white, $background: #a09164, $borderRadius: 5px, $balance: 1.5) {
+    font-size: $fontSize;
+    width: $width / $count - $balance;
+    height: $height;
+    color: $color;
+    background: $background;
+    border-radius: $borderRadius;
+}
+
+@mixin Common-Select ($count: 1, $balance: 0, $gap: 0px) {
+    width: 100% / $count - $balance;
+    height: 36px;
+    margin-right: $gap;
+}
+
+.Common-Container {
+   max-width: 480px;
+}
+
+.Common-TitleBox {
+   text-align: center;
+   margin-bottom: 10px;
+
+   h2 {
+       color: #867955;
+       &::before, &::after {
+           display: inline-block;
+           content: "";
+           border-top: 2px solid #867955;
+           width: 4rem;
+           margin: 0 1rem;
+           transform: translateY(-1rem);
+       }
+   }
+}
+
+.Common-RowBox {
+   margin: 0 auto 10px auto;
+}
+
+.Common-LineDotted {
+   border-top: 1px dotted;
+   padding: 5px 0;
+}
+
+.Common-RowOneButton {
+   @include Common-BtnStep(
+       $background: #28afaf,
+       $height: 40px,
+       $fontSize: 18px,
+       $balance: 0
+   )
+}
+
+.Common-RowOneButton_Click {
+   @include Common-BtnStep(
+       $background: #eb3c46,
+       $height: 40px,
+       $fontSize: 18px,
+       $balance: 0
+   )
+}
+
+.Common-RowTwoButton {
+   @include Common-BtnStep(
+       $background: #28afaf,
+       $height: 40px,
+       $fontSize: 18px,
+       $count: 2
+   )
+}
+
+.Common-RowTwoButton_Click {
+   @include Common-BtnStep(
+       $background: #eb3c46,
+       $height: 40px,
+       $fontSize: 18px,
+       $count: 2
+   )
+}
+
+.Common-RowThreeButton {
+   @include Common-BtnStep(
+       $background: #28afaf,
+       $height: 40px,
+       $fontSize: 18px,
+       $count: 3
+   )
+}
+
+.Common-RowThreeButton_Click {
+   @include Common-BtnStep(
+       $background: #eb3c46,
+       $height: 40px,
+       $fontSize: 18px,
+       $count: 3
+   )
+}
+
+.Common-RowThreeSelect {
+    width: 100%;
+
+    select {
+        @include Common-Select($count: 3, $balance: 1.8, $gap: 8.1px);
+    }
+}
+
+.Common-RowTwoSelect {
+    width: 100%;
+
+    select {
+        @include Common-Select($count: 2, $balance: 1.8, $gap: 8.1px);
+    }
+}
+
+.Common-RowOneSelect {
+    width: 100%;
+
+    select {
+        @include Common-Select($count: 1);
+    }
+}
+
+.Common-IconScoreFeature {
+    width: 177px;
+    height: 177px;
+    background: #FF8410;
+    color: white;
+    text-align: center;
+    border-radius: 177px;
+    padding: 10px 0;
+    margin-top: 30px;
+
+    div:nth-child(1) {
+        span:nth-child(1) {
+            font-size: 72px;
+        }
+    }
+
+    div {
+        span {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.member_withdraw_page {
+  width: 100%;
+  height: 100%;
+
+  .info_title_box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+    .info_title {
+      font-size: 2.5rem;
+    }
+  }
+
+  .main_balance_box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    text-align: center;
+
+    .main_balance_title_txt {
+      font-size: 1.6rem;
+      margin-right: 10px;
+    }
+
+    .main_balance_txt {
+      font-size: 2rem;
+    }
+  }
+
+  .withdraw_container {
+    width: 100%;
+    height: auto;
+
+    .bankcard_box {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+
+      .bankcard_amount {
+        font-size: 1.5rem;
+        margin-right: 10px;
+      }
+
+      .add_bankcard {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    }
+
+    .withdraw_box {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .bankcard_list {
+        width: 40%;
+        height: auto;
+
+        .mobile_bankcard_select {
+          width: 100%;
+          height: 40px;
+          margin-bottom: 10px;
+          display: none;
+        }
+
+        .bankcard_group {
+          width: 100%;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          .bankcard_summary_info_box {
+            width: 95%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .bankcard_num {
+              width: 10%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 1.8rem;
+            }
+
+            .hr {
+              height: 75%;
+              margin-right: 3%;
+            }
+
+            .bankcard_summary_info {
+              font-size: 1.5rem;
+            }
+          }
+
+          .bankcard_point_triangle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 0 5px 10px;
+          }
+        }
+      }
+
+      .withdraw_content {
+        width: 55%;
+        height: auto;
+        position: relative;
+        border-radius: 10px;
+        padding: 5% 5% 5% 5%;
+        box-shadow: 0 2px 5px rgba(0,0,0,.3);
+
+        .bankcard_label {
+          width: 45px;
+          height: 45px;
+          border-radius: 0 0 50px 50px;
+          font-size: 1.8rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 0;
+          left: 10%;
+        }
+
+        .bankcard_detail_info_box {
+          width: 100%;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+
+          .detail_info_title {
+            font-size: 1.6rem;
+          }
+
+          .detail_info {
+            font-size: 1.6rem;
+          }
+        }
+
+        .dialog_deal_adjust_box {
+          width: 100%;
+          height: 40px;
+          border-radius: 5px;
+          overflow: hidden;
+          margin-bottom: 15px;
+        }
+
+        .next_step_btn {
+          width: 100%;
+          height: 40px;
+          font-size: 1.8rem;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

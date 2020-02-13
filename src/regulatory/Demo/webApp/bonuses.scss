@@ -1,0 +1,62 @@
+@import "../colorConfig/bonuses.scss";
+
+.bonuses_page {
+  background-color: $bonuses-bg;
+
+  .bonuses_container {
+    .bonuses_box {
+      background-color: $bonuses-item-bg;
+
+      .summary_box {
+        .bonuses_status {
+          .no_apply_box {
+            .icon_box {
+              background-color: $bonuses-no-apply-icon-bg;
+
+              .no_apply_icon {
+                color: $bonuses-no-apply-icon;
+              }
+            }
+
+            .no_apply_txt {
+              color: $bonuses-no-apply-txt;
+            }
+          }
+          
+          .detail_btn_box {
+            background-color: $bonuses-detail-btn-box-bg;
+            border: $bonuses-detail-btn-box-border;
+
+            .detail_btn_txt {
+              color: $bonuses-detail-btn-box-txt;
+            }
+
+            .detail_btn_icon {
+              color: $bonuses-detail-btn-box-icon;
+            }
+          }
+
+          .manual_apply_btn {
+            background-color: $bonuses-manual-apply-btn-bg;
+            color: $bonuses-manual-apply-btn-txt;
+            border: $bonuses-manual-apply-btn-border;
+          }
+
+          .contact_status {
+            color: $bonuses-contact-txt;
+          }
+        }
+      }
+
+      .detail_box {
+        .detail_title {
+          color: $bonuses-detail-title;
+        }
+
+        .detail_activity_time {
+          color: $bonuses-detail-activity-time;
+        }
+      }
+    }
+  }
+}

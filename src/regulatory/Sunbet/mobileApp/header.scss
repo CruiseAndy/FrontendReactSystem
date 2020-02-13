@@ -1,0 +1,112 @@
+@import "../colorConfig/header.scss";
+
+.mobile_header_pattern {
+  background-color: $header-bg;
+
+  .header_container {
+    .header_user_box {
+      .icon_user {
+        color: $header-slide-user-icon;
+      }
+
+      .register_txt {
+        color: $header-register-txt;
+      }
+
+      .hr {
+        border-right: $header-hr;
+      }
+
+      .login_txt {
+        color: $header-login-txt;
+      }
+    }
+  }
+
+  .slide_mask {
+    background-color: $header-slide-mask;
+  }
+
+  .slide_pattern {
+    background-color: $header-slide-bg;
+  }
+
+  .header_menu_container {
+    .content_group {
+      border-bottom: $header-slide-content-group-border;
+
+      .link_box {
+        .icon_link {
+          color: $header-slide-content-icon;
+        }
+
+        .link_txt {
+          color: $header-slide-content-txt;
+
+          &.active {
+            color: $header-slide-content-acitve-txt;
+          }
+        }
+
+        .lang_chk {
+          background-color: $header-slide-content-chk-bg;
+
+          .icon_chk {
+            color: $header-slide-content-chk;
+          }
+        }
+      }
+
+      .lang_title {
+        color: $header-slide-content-txt;
+      }
+    }
+  }
+
+  .header_user_info_container {
+    .user_info_box {
+      background-color: $header-slide-user-info-bg;
+
+      .user_info_group {
+        .user_info_title_txt {
+          color: $header-slide-content-txt;
+        }
+
+        .user_info_txt {
+          color: $header-slide-content-txt;
+        }
+      }
+    }
+
+    .member_nav_container {
+      .member_nav_img_group {
+        .nav_img_box {
+          background-color: $header-slide-member-nav-img-bg;
+
+          .nav_img_txt {
+            color: $header-slide-content-txt;
+          }
+        }
+      }
+
+      .member_nav_group {
+        .nav_item_box {
+          .nav_txt {
+            color: $header-slide-content-txt;
+
+            &.active {
+              color: $header-slide-content-acitve-txt;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .logout_btn_box {
+    .logout_btn {
+      background-color: $header-slide-logout-bg;
+      color: $header-slide-content-txt;
+    }
+  }
+}

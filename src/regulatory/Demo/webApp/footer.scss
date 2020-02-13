@@ -1,0 +1,71 @@
+@import "../colorConfig/footer.scss";
+
+.footer_pattern {
+  background-color: $footer-bg;
+
+  .footer_container {
+    .footer_link_section {
+      .footer_link_box {
+        .company_related_box {
+          .company_desc {
+            .title {
+              color: $footer-company-title;
+            }
+
+            .description {
+              color: $footer-company-description;
+            }
+          }
+        }
+
+        .more_link_box {
+          .more_link_title {
+            color: $footer-more-link-title;
+          }
+
+          .more_link {
+            color: $footer-more-link-item;
+          }
+        }
+
+        .language_box {
+          .language_title {
+            color: $footer-lang-title;
+          }
+
+          .lang_item {
+            .lang_chk {
+              background-color: $footer-lang-chk-bg;
+
+              .chk_icon {
+                color: $footer-lang-chk;
+              }
+
+              &.lang_chk_active {
+                background-color: $footer-lang-chk-active-bg;
+              }
+            }
+
+            .lang_txt {
+              color: $footer-lang-chk-txt;
+
+              &.lang_txt_active {
+                color: $footer-lang-chk-active-txt;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer_footer {
+    background-color: $footer-footer-bg;
+
+    .footer_footer_box {
+      .link_txt {
+        color: $footer-footer-txt;
+      }
+    }
+  }
+}

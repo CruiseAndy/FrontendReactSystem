@@ -1,0 +1,156 @@
+.add_bankcard_page {
+  width: 100%;
+  height: 100%;
+
+  .info_title_box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+    .info_title {
+      font-size: 2.5rem;
+    }
+  }
+
+  .info_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .bankcard_info_group {
+      width: 47%;
+      min-width: 350px;
+      height: auto;
+      margin-bottom: 10px;
+
+      .info_title_box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+
+        .info_title_txt {
+          font-size: 1.8rem;
+        }
+      }
+
+      .info_input_box {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 0 7%;
+
+        .info_input, input, .bank_list {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1130px) {
+      .bankcard_info_group {
+        width: 100%;
+      }
+    }
+  }
+
+  .info_submit_box {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+    .info_cancel_btn {
+      width: 30%;
+      height: 100%;
+      font-size: 1.9rem;
+      border-radius: 5px;
+    }
+
+    .info_submit_btn {
+      width: 65%;
+      height: 100%;
+      font-size: 1.9rem;
+      border-radius: 5px;
+    }
+  }
+
+  .verify_step_notice_box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+
+    .send_verify_code_box {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .go_to_txt {
+        font-size: 1.6rem;
+        margin-right: 10px;
+      }
+
+      .user_email_txt {
+        font-size: 1.6rem;
+        margin-right: 15px;
+      }
+
+      .resend_verify_code_btn {
+        width: auto;
+        min-width: 100px;
+        height: auto;
+        padding: 3px 8px;
+        font-size: 1.4rem;
+        border-radius: 5px;
+      }
+    }
+
+    .verify_desc_txt {
+      font-size: 1.6rem;
+    }
+  }
+
+  .verify_step_box {
+    width: 47%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .verify_notice_txt {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .verify_code_input {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 0 20px;
+      font-size: 1.6rem;
+    }
+
+    .verify_submit_btn {
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      font-size: 1.6rem;
+    }
+  }
+
+  @media screen and (max-width: 1130px) {
+    .verify_step_box {
+      width: 100%;
+    }
+  }
+}

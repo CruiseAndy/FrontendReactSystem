@@ -1,0 +1,39 @@
+@import "../colorConfig/news.scss";
+
+.news_pattern {
+  min-height: 300px;
+  background-color: $news-bg;
+
+  .news_container {
+    .news_header_box {
+      .news_paper_box {
+        .news_paper {
+          background-color: $news-paper-bg;
+        }
+      }
+
+      .all_button {
+        background-color: $news-all-btn-bg;
+        color: $news-all-btn-txt;
+      }
+    }
+
+    .news_hr {
+      border-bottom: $news-hr;
+    }
+
+    .news_content_box {
+      .news_title {
+        span {
+          color: $news-info-title;
+        }
+      }
+
+      .news_content {
+        span {
+          color: $news-info-content;
+        }
+      }
+    }
+  }
+}

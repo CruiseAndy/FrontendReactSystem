@@ -1,0 +1,27 @@
+@import "../colorConfig/login.scss";
+
+.mobile_login_page {
+  .mobile_login_container {
+    .login_title_txt {
+      color: $mobile-login-title-txt;
+    }
+
+    .user_info_group {
+      border-bottom: $mobile-login-info-group-border;
+
+      .user_info_input {
+        color: $mobile-login-input-txt;
+      }
+
+      .forget_pwd_btn {
+        background-color: $mobile-login-forget-pwd-btn-bg;
+        color: $mobile-login-forget-pwd-btn-txt;
+      }
+    }
+
+    .login_submit_btn {
+      background-color: $mobile-login-submit-btn-bg;
+      color: $mobile-login-submit-btn-txt;
+    }
+  }
+}

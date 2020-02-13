@@ -1,0 +1,74 @@
+.mobile_register_page {
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+
+  .register_page {
+    flex-direction: column;
+    padding: 40px 10px;
+    min-height: inherit;
+
+    .register_container {
+      display: block;
+      position: relative;
+
+      .process_step_box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+
+        .mobile_step_group {
+          display: block;
+          width: 32%;
+          height: auto;
+          margin-bottom: 0;
+
+          .step_box {
+            width: 100%;
+            border-radius: inherit;
+            padding: 3px 0;
+            display: flex;
+            justify-content: center;
+
+            .step_num {
+              font-size: 2rem;
+              margin-right: 10px;
+            }
+
+            .hr {
+              display: none;
+            }
+
+            .step_txt {
+              font-size: 1.6rem;
+            }
+          }
+
+          .step1_triangle, .step2_triangle, .step3_triangle {
+            display: none;
+          }
+        }
+
+        .step_group {
+          display: none;
+        }
+      }
+
+      .process_info_container {
+        width: 85%;
+        margin: 0 auto;
+
+        .process_info_title {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

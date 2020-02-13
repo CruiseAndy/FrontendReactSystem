@@ -1,0 +1,598 @@
+@import "../colorConfig/member.scss";
+
+.member_pattern {
+  background-color: $member-bg;
+
+  .balance {
+    color: $member-balance-txt;
+  }
+
+  .member_menu_box {
+    .member_info_box {
+      background-color: $member-info-box-bg;
+    }
+
+    .menu_list_box {
+      background-color: $member-menu-bg;
+
+      .menu_group {
+        border-bottom: $member-menu-item-border-bottom;
+
+        &:last-child {
+          border: none;
+        }
+
+        .route_point {
+          background-color: transparent;
+
+          &.active {
+            background-color: $member-menu-item-active;
+          }
+        }
+
+        .menu_name {
+          color: $member-menu-item-txt;
+        }
+
+        .active_icon_box {
+          background-color: $member-menu-item-active-icon-bg;
+
+          .icon_next {
+            color: $member-menu-item-active-icon;
+          }
+        }
+      }
+    }
+  }
+
+  .member_content {
+    .member_info_page, .member_change_pwd_page, .member_deposit_page,
+    .member_withdraw_page, .add_bankcard_page, .member_main_wallet_history_page,
+    .member_game_history_page, .member_notification_page, .member_game_wallet_page {
+      .info_title_box {
+        .info_title {
+          color: $member-info-caption-txt;
+        }
+      }
+
+      .main_balance_box {
+        .main_balance_title_txt {
+          color: $member-info-caption-txt;
+        }
+    
+        .main_balance_txt {
+          color: $member-secondary-color;
+        }
+      }
+    
+      .info_container {
+        .profile_info_group, .bankcard_info_group {
+          .info_title_box {
+            .info_title_txt {
+              color: $member-info-title-txt;
+            }
+          }
+    
+          .info_input_box {
+            background-color: $member-info-input-bg;
+    
+            .info_input, input, .bank_list {
+              background-color: $member-info-input-bg;
+              color: $member-info-input-txt;
+            }
+          }
+        }
+      }
+    }
+
+    .info_submit_box {
+      .info_cancel_btn {
+        background-color: $member-withdraw-add-bankcard-cancel-btn-bg;
+        color: $member-withdraw-add-bankcard-cancel-btn-txt;
+        border: $member-withdraw-add-bankcard-cancel-btn-border;
+      }
+
+      .info_submit_btn {
+        background-color: $member-submit-btn-bg;
+        color: $member-submit-btn-txt;
+      }
+    }
+
+    .verify_step_notice_box {
+      .send_verify_code_box {
+        .go_to_txt {
+          color: $member-withdraw-bankcard-verify-desc-txt;
+        }
+  
+        .user_email_txt {
+          color: $member-withdraw-bankcard-verify-email-txt;
+        }
+  
+        .resend_verify_code_btn {
+          border: $member-withdraw-bankcard-verify-resend-btn-border;
+          color: $member-withdraw-bankcard-verify-resend-btn-txt;
+          background-color: $member-withdraw-bankcard-verify-resend-btn-bg;
+        }
+      }
+  
+      .verify_desc_txt {
+        color: $member-withdraw-bankcard-verify-notice-txt;
+      }
+    }
+  
+    .verify_step_box {
+      .verify_notice_txt {
+        color: $member-withdraw-bankcard-verify-input-notice-txt;
+      }
+  
+      .verify_code_input {
+        background-color: $member-withdraw-bankcard-verify-input-bg;
+        color: $member-withdraw-bankcard-verify-input-txt;
+      }
+  
+      .verify_submit_btn {
+        background-color: $member-withdraw-bankcard-verify-btn-bg;
+        color: $member-withdraw-bankcard-verify-btn-txt;
+      }
+    }
+    
+    .member_deposit_page {
+      .payment_container {
+        .payment_box {
+          background-color: $member-payment-item-bg;
+
+          .payment_name {
+            color: $member-payment-name-txt;
+          }
+    
+          .payment_status_box {
+            .status_active {
+              background-color: $member-payment-icon-bg;
+    
+              .active_icon {
+                color: $member-payment-icon;
+              }
+            }
+
+            .status_maintain {
+              background-color: $member-payment-maintain-bg;
+    
+              .maintain_txt {
+                color: $member-payment-maintain-txt;
+              }
+            }
+          }
+
+          &:hover {
+            .payment_name {
+              color: $member-payment-name-txt-hover;
+            }
+    
+            .payment_status_box {
+              .status_active {
+                background-color: $member-payment-icon-bg-hover;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .member_withdraw_page {
+      .withdraw_container {
+        .bankcard_box {
+          .bankcard_amount {
+            color: $member-withdraw-bankcard-amount-txt;
+          }
+
+          .add_bankcard {
+            background-color: $member-withdraw-add-bankcard-btn-bg;
+            color: $member-withdraw-add-bankcard-btn-txt;
+          }
+        }
+    
+        .withdraw_box {
+          .bankcard_list {
+            .bankcard_group {
+              .bankcard_summary_info_box {
+                background-color: $member-withdraw-bankcard-item-bg;
+
+                &.active {
+                  background-color: $member-withdraw-bankcard-item-active-bg;
+                }
+
+                .bankcard_num {
+                  color: $member-withdraw-bankcard-num-txt;
+
+                  &.active {
+                    color: $member-withdraw-bankcard-num-active-txt;
+                  }
+                }
+    
+                .hr {
+                  border-right: $member-withdraw-bankcard-hr;
+                }
+
+                .bankcard_summary_info {
+                  color: $member-withdraw-bankcard-item-txt;
+
+                  &.active {
+                    color: $member-withdraw-bankcard-item-active-txt;
+                  }
+                }
+              }
+    
+              .bankcard_point_triangle {
+                border-color: $member-withdraw-bankcard-triangle-active;
+              }
+            }
+          }
+
+          .withdraw_content {
+            background-color: $member-withdraw-bankcard-detail-bg;
+
+            .bankcard_label {
+              background-color: $member-withdraw-bankcard-item-active-bg;
+              color: $member-withdraw-bankcard-num-active-txt;
+            }
+
+            .dialog_deal_adjust_box {
+              border: $member-withdraw-input-adjust-border;
+      
+              .input_range_component {
+                .adjust_box {
+                  background-color: $member-withdraw-input-adjust-symbol-bg;
+              
+                  .adjust_symbol {
+                    color: $member-withdraw-input-adjust-symbol;
+                  }
+      
+                  &.disabled {
+                    background-color: $member-withdraw-input-adjust-symbol-bg-disabled;
+                  }
+                }
+              
+                .input_box {
+                  background-color: $member-withdraw-input-input-bg;
+      
+                  .adjust_input {
+                    background-color: $member-withdraw-input-input-bg;
+                    color: $member-withdraw-input-input-txt;
+                  }
+                }
+              }
+            }
+
+            .next_step_btn {
+              background-color: $member-withdraw-next-btn-bg;
+              color: $member-withdraw-next-btn-txt;
+            }
+          }
+        }
+      }
+    }
+
+    .member_main_wallet_history_page, .member_game_history_page,
+    .member_notification_page, .member_game_wallet_page {
+      .table_container {
+        .table_component {
+          .table_box {
+            .table_title {
+              background-color: $member-history-table-title-bg;
+              color: $member-history-table-title-txt;
+            }
+
+            .table_data_group {
+              background-color: $member-history-table-tr-bg;
+              border-bottom: $member-history-table-tr-border-bottom;
+              color: $member-history-table-td-txt;
+
+              &.no_data {
+                background-color: $member-history-table-tr-no-data-bg;
+                border-bottom: $member-history-table-tr-no-data-border-bottom;
+
+                .no_data_txt {
+                  color: $member-history-table-tr-no-data-txt;
+                }
+              }
+
+              .table_img_box {
+                .img_box {
+                  border: $member-history-detail-btn-border;
+                }
+              }
+
+              .notification_unread_box {
+                .notification_unread {
+                  background-color: $member-notification-unread-tag-bg;
+                  color: $member-notification-unread-tag-txt;
+                }
+              }
+            }
+          }
+
+          .pages_box {
+            .page_link_box {
+              background-color: $member-history-page-box-bg;
+        
+              span {
+                color: $member-history-page-box-txt;
+              }
+
+              &.active {
+                background-color: $member-history-page-box-active-bg;
+
+                span {
+                  color: $member-history-page-box-active-txt;
+                }
+              }
+            }
+          }
+
+          .detail_info_container {
+            background-color: $member-history-detail-dialog-mask;
+
+            .detail_info_box {
+              background-color: $member-history-detail-dialog-bg;
+
+              .icon_close {
+                color: $member-history-detail-dialog-close-icon;
+              }
+
+              .detail_info_title {
+                color: $member-history-detail-dialog-title;
+              }
+
+              .detail_content_box {
+                .detail_content_title {
+                  color: $member-history-detail-dialog-sub-title;
+                }
+
+                .detail_content_txt {
+                  color: $member-history-detail-dialog-txt;
+                }
+              }
+
+              .hr {
+                border-bottom: $member-history-detail-dialog-hr;
+              }
+
+              .detail_datetime_box {
+                background-color: $member-notification-detail-dialog-datetime-bg;
+        
+                .detail_datetime_txt {
+                  color: $member-notification-detail-dialog-datetime-txt;
+                }
+              }
+            }
+          }
+        }
+
+        .table2_component {
+          .table_box {
+            .no_data {
+              background-color: $member-history-table-tr-no-data-bg;
+              border-bottom: $member-history-table-tr-no-data-border-bottom;
+
+              .no_data_txt {
+                color: $member-history-table-tr-no-data-txt;
+              }
+            }
+
+            .table_data_group {
+              &:nth-child(odd) {
+                background-color: $member-history-table-tr-bg;
+              }
+
+              .table_img_box {
+                .img_box {
+                  border: $member-history-detail-btn-border;
+                }
+              }
+
+              .notification_unread_box {
+                .notification_unread {
+                  background-color: $member-notification-unread-tag-bg;
+                  color: $member-notification-unread-tag-txt;
+                }
+              }
+
+              .table_data_box {
+                .table_data_info_title {
+                  color: $member-history-table-td-txt;
+                }
+        
+                .table_data_info_txt {
+                  color: $member-history-table-td-txt;
+                }
+              }
+            }
+          }
+
+          .pages_box {
+            .page_link_box {
+              background-color: $member-history-page-box-bg;
+        
+              span {
+                color: $member-history-page-box-txt;
+              }
+
+              &.active {
+                background-color: $member-history-page-box-active-bg;
+
+                span {
+                  color: $member-history-page-box-active-txt;
+                }
+              }
+            }
+          }
+
+          .detail_info_container {
+            background-color: $member-history-detail-dialog-mask;
+
+            .detail_info_box {
+              background-color: $member-history-detail-dialog-bg;
+
+              .icon_close {
+                color: $member-history-detail-dialog-close-icon;
+              }
+
+              .detail_info_title {
+                color: $member-history-detail-dialog-title;
+              }
+
+              .detail_content_box {
+                .detail_content_title {
+                  color: $member-history-detail-dialog-sub-title;
+                }
+
+                .detail_content_txt {
+                  color: $member-history-detail-dialog-txt;
+                }
+              }
+
+              .hr {
+                border-bottom: $member-history-detail-dialog-hr;
+              }
+
+              .detail_datetime_box {
+                background-color: $member-notification-detail-dialog-datetime-bg;
+        
+                .detail_datetime_txt {
+                  color: $member-notification-detail-dialog-datetime-txt;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .member_game_wallet_page {
+      .game_wallet_container {
+        .transfer_mode_box {
+          .transfer_mode {
+            .transfer_mode_btn {
+              background-color: $member-game-wallet-transfer-btn-bg;
+              color: $member-game-wallet-transfer-btn-txt;
+
+              &.active_into {
+                background-color: $member-game-wallet-transfer-to-game-btn-active-bg;
+                color: $member-game-wallet-transfer-btn-active-txt;
+              }
+
+              &.active_out {
+                background-color: $member-game-wallet-transfer-to-main-btn-active-bg;
+                color: $member-game-wallet-transfer-btn-active-txt;
+              }
+            }
+    
+            .transfer_triangle.into {
+              border-color: transparent transparent transparent $member-game-wallet-transfer-to-game-btn-active-bg;
+            }
+    
+            .transfer_triangle.out {
+              border-color: transparent transparent transparent $member-game-wallet-transfer-to-main-btn-active-bg;
+            }
+          }
+        }
+
+        .transfer_amount_box {
+          .game_wallet_balance {
+            .wallet_title {
+              color: $member-game-wallet-balance-title-txt;
+            }
+    
+            .wallet_balance {
+              color: $member-game-wallet-balance-txt;
+            }
+          }
+    
+          .transfer_amount {
+            .transfer_submit {
+              background-color: $member-game-wallet-transfer-submit-btn-bg;
+              color: $member-game-wallet-transfer-submit-btn-txt;
+            }
+          }
+        }
+      }
+
+      .hr {
+        border-bottom: $member-game-wallet-transfer-hr;
+      }
+    }
+  }
+
+  .deal_dialog_container {
+    background-color: $member-deal-dialog-mask;
+
+    .dialog_box {
+      background-color: $member-deal-dialog-bg;
+
+      .dialog_close_box {
+        .icon_close {
+          color: $member-deal-dialog-close;
+        }
+      }
+
+      .dialog_title_box {
+        .dialog_title {
+          color: $member-deal-dialog-title;
+        }
+      }
+
+      .hr {
+        border-bottom: $member-deal-dialog-hr;
+      }
+
+      .dialog_deal_range_box {
+        .deal_range_title {
+          color: $member-deal-dialog-range-title;
+        }
+
+        .deal_range_txt {
+          color: $member-deal-dialog-range-txt;
+        }
+      }
+
+      .dialog_next_step_box {
+        .dialog_next_step_btn {
+          background-color: $member-deal-dialog-next-btn-bg;
+          color: $member-deal-dialog-next-btn-txt;
+        }
+      }
+    }
+  }
+
+  .dialog_deal_adjust_box {
+    border: $member-deal-dialog-adjust-border;
+
+    .input_range_component {
+      .adjust_box {
+        background-color: $member-deal-dialog-adjust-symbol-bg;
+    
+        .adjust_symbol {
+          color: $member-deal-dialog-adjust-symbol;
+        }
+
+        &.disabled {
+          background-color: $member-deal-dialog-adjust-symbol-bg-disabled;
+        }
+      }
+    
+      .input_box {
+        background-color: $member-deal-dialog-input-bg;
+
+        .adjust_input {
+          background-color: $member-deal-dialog-input-bg;
+          color: $member-deal-dialog-input-txt;
+        }
+      }
+    }
+  }
+
+  .css-1ddefhu {
+    border-color: $member-game-wallet-spinner;
+    border-bottom-color: transparent;
+  }
+}

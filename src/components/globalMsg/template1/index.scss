@@ -1,0 +1,86 @@
+@import "../animation.scss";
+
+.global_msg_component {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      
+  .msg_icon {
+    font-size: 8vw;
+  }
+
+  .msg_box {
+    width: 25%;
+    height: 25%;
+    border-radius: 5px;
+    animation-name: fadeInOpacity;
+    -webkit-animation-name: fadeInOpacity;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    overflow: hidden;
+
+    /* Portrait */
+    @media screen and (orientation: portrait) {
+      /* Portrait styles */
+      width: 28%;
+      height: 20%;
+    }
+
+    /* Landscape */
+    @media screen and (orientation: landscape) {
+      /* Landscape styles */
+      width: 25%;
+      height: 25%;
+    }
+
+    .error_msg_box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .msg_txt {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        padding: 0 10px;
+      }
+    }
+
+    .info_msg_box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .msg_txt {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .msg_icon {
+      font-size: 15vw;
+    }
+
+    .msg_box {
+      /* Portrait styles */
+      width: 75%;
+      height: 30%;
+    }
+  }
+}

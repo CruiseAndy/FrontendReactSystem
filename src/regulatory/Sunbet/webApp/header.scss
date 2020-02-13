@@ -1,0 +1,133 @@
+@import "../colorConfig/header.scss";
+
+.header_pattern {
+  background-color: $header-bg;
+
+  .header_container {
+
+    .logo_section {
+
+      .logo_img {
+      }
+    }
+
+    .login_nav_section {
+
+      .login_section {
+
+        .account_box {
+          background-color: $header-account-input-bg;
+
+          input {
+            background-color: $header-account-input-bg;
+            color: $header-account-input-txt;
+
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+              color: $header-account-input-placeholder;
+            }
+            
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+              color: $header-account-input-placeholder;
+            }
+            
+            &::-ms-input-placeholder { /* Microsoft Edge */
+              color: $header-account-input-placeholder;
+            }
+          }
+        }
+
+        .password_box {
+          background-color: $header-password-input-bg;
+          color: $header-password-input-txt;
+
+          input {
+            background-color: $header-password-input-bg;
+
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+              color: $header-password-input-placeholder;
+            }
+            
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+              color: $header-password-input-placeholder;
+            }
+            
+            &::-ms-input-placeholder { /* Microsoft Edge */
+              color: $header-password-input-placeholder;
+            }
+          }
+
+          .forgetPwd_box {
+
+            button {
+              background-color: $header-forget-password-button-bg;
+              color: $header-forget-password-button-txt;
+              border: $header-forget-password-button-border;
+            }
+          }
+        }
+
+        .login_box {
+          background-color: $header-login-button-bg;
+
+          button {
+            background-color: $header-login-button-bg;
+            color: $header-login-button-txt;
+          }
+        }
+
+        .register_box {
+          background-color: $header-register-button-bg;
+
+          button {
+            background-color: $header-register-button-bg;
+            color: $header-register-button-txt;
+            border: $header-register-button-border;
+          }
+        }
+
+        .login_info_box {
+          .login_info_icon {
+            color: $header-login-info-icon;
+          }
+
+          .login_info_account {
+            color: $header-login-info-account-txt;
+          }
+          
+          .member_central {
+            background-color: $header-member-central-button-bg;
+            color: $header-member-central-button-txt;
+            border: $header-member-central-button-border;
+          }
+          
+          .user_logout {
+            background-color: $header-logout-button-bg;
+            color: $header-logout-button-txt;
+            border: $header-logout-button-border;
+          }
+        }
+      }
+
+      .nav_section {
+        .nav_item {
+          .nav_title {
+            .nav_icon {
+              color: $header-nav-icon;
+            }
+            .nav_title {
+              color: $header-nav-txt;
+            }
+          }
+
+          .triangle {
+            border-color: transparent transparent $header-nav-triangle transparent;
+          }
+
+          .non_triangle {
+            border-color: transparent transparent $header-nav-triangle transparent;
+          }
+        }
+      }
+    }
+  }
+}

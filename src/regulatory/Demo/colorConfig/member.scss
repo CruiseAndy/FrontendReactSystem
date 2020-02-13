@@ -1,0 +1,131 @@
+$member-main-color: pink;
+$member-secondary-color: blue;
+$member-thirdary-color: #000000;
+$member-fourth-color: #ffffff;
+$member-hr: 1px solid #bababa;
+
+$member-bg: $member-fourth-color;
+$member-info-box-bg: $member-main-color;
+$member-balance-txt: $member-secondary-color;
+
+// member menu list
+$member-menu-bg: $member-main-color;
+$member-menu-item-active: $member-secondary-color;
+$member-menu-item-active-icon-bg: $member-secondary-color;
+$member-menu-item-active-icon: $member-fourth-color;
+$member-menu-item-txt: $member-thirdary-color;
+$member-menu-item-border-bottom: 1px solid #e0e0e0;
+
+// member info page
+$member-info-caption-txt: $member-thirdary-color;
+$member-info-title-txt: $member-thirdary-color;
+$member-info-input-bg: $member-main-color;
+$member-info-input-txt: $member-thirdary-color;
+
+// submit button
+$member-submit-btn-bg: $member-secondary-color;
+$member-submit-btn-txt: $member-fourth-color;
+
+// member deposit page
+$member-payment-item-bg: $member-main-color;
+$member-payment-name-txt: $member-thirdary-color;
+$member-payment-name-txt-hover: $member-secondary-color;
+$member-payment-icon-bg: #bababa;
+$member-payment-icon-bg-hover: $member-secondary-color;
+$member-payment-icon: $member-fourth-color;
+$member-payment-maintain-bg: #ec9937;
+$member-payment-maintain-txt: $member-fourth-color;
+
+// member dialog
+$member-deal-dialog-mask: rgba(5,5,5,0.7);
+$member-deal-dialog-bg: $member-fourth-color;
+$member-deal-dialog-close: #909399;
+$member-deal-dialog-title: $member-thirdary-color;
+$member-deal-dialog-hr: $member-hr;
+$member-deal-dialog-range-title: $member-thirdary-color;
+$member-deal-dialog-range-txt: $member-secondary-color;
+$member-deal-dialog-adjust-border: 1px solid $member-main-color;
+$member-deal-dialog-adjust-symbol-bg: $member-fourth-color;
+$member-deal-dialog-adjust-symbol-bg-disabled: #cccccc;
+$member-deal-dialog-adjust-symbol: #bababa;
+$member-deal-dialog-input-bg: $member-main-color;
+$member-deal-dialog-input-txt: #606266;
+$member-deal-dialog-next-btn-bg: $member-secondary-color;
+$member-deal-dialog-next-btn-txt: $member-fourth-color;
+
+// member withdraw page
+$member-withdraw-bankcard-amount-txt: $member-thirdary-color;
+$member-withdraw-add-bankcard-btn-bg: $member-secondary-color;
+$member-withdraw-add-bankcard-btn-txt: $member-fourth-color;
+$member-withdraw-add-bankcard-cancel-btn-bg: $member-fourth-color;
+$member-withdraw-add-bankcard-cancel-btn-txt: #4d4d4d;
+$member-withdraw-add-bankcard-cancel-btn-border: 1px solid #4d4d4d;
+$member-withdraw-bankcard-item-bg: $member-main-color;
+$member-withdraw-bankcard-item-active-bg: $member-secondary-color;
+$member-withdraw-bankcard-triangle-active: transparent transparent transparent $member-secondary-color;
+$member-withdraw-bankcard-num-txt: $member-thirdary-color;
+$member-withdraw-bankcard-num-active-txt: $member-fourth-color;
+$member-withdraw-bankcard-hr: 2px solid $member-fourth-color;
+$member-withdraw-bankcard-item-txt: $member-thirdary-color;
+$member-withdraw-bankcard-item-active-txt: $member-fourth-color;
+$member-withdraw-bankcard-detail-bg: $member-main-color;
+$member-withdraw-bankcard-verify-desc-txt: #242424;
+$member-withdraw-bankcard-verify-email-txt: $member-secondary-color;
+$member-withdraw-bankcard-verify-resend-btn-border: 1px solid #707070;
+$member-withdraw-bankcard-verify-resend-btn-bg: transparent;
+$member-withdraw-bankcard-verify-resend-btn-txt: #4D4D4D;
+$member-withdraw-bankcard-verify-notice-txt: #4D4D4D;
+$member-withdraw-bankcard-verify-input-notice-txt: $member-thirdary-color;
+$member-withdraw-bankcard-verify-input-bg: $member-main-color;
+$member-withdraw-bankcard-verify-input-txt: $member-thirdary-color;
+$member-withdraw-bankcard-verify-btn-bg: $member-secondary-color;
+$member-withdraw-bankcard-verify-btn-txt: $member-fourth-color;
+$member-withdraw-next-btn-bg: $member-secondary-color;
+$member-withdraw-next-btn-txt: $member-fourth-color;
+
+// member withdraw input range
+$member-withdraw-input-adjust-border: 1px solid #dcdfe6;
+$member-withdraw-input-adjust-symbol-bg: #f5f7fa;
+$member-withdraw-input-adjust-symbol-bg-disabled: #cccccc;
+$member-withdraw-input-adjust-symbol: #606266;
+$member-withdraw-input-input-bg: $member-fourth-color;
+$member-withdraw-input-input-txt: $member-thirdary-color;
+
+// member history table
+$member-history-table-title-bg: $member-secondary-color;
+$member-history-table-title-txt: $member-fourth-color;
+$member-history-table-tr-bg: $member-main-color;
+$member-history-table-tr-border-bottom: 1px solid $member-fourth-color;
+$member-history-table-td-txt: #606266;
+$member-history-table-tr-no-data-bg: $member-fourth-color;
+$member-history-table-tr-no-data-border-bottom: 1px solid #ebeef5;
+$member-history-table-tr-no-data-txt: #909399;
+$member-history-page-box-bg: $member-main-color;
+$member-history-page-box-txt: #c0c4cc;
+$member-history-page-box-active-bg: $member-secondary-color;
+$member-history-page-box-active-txt: $member-fourth-color;
+$member-history-detail-btn-border: $member-hr;
+$member-history-detail-dialog-mask: rgba(5,5,5,0.7);
+$member-history-detail-dialog-bg: $member-fourth-color;
+$member-history-detail-dialog-title: $member-thirdary-color;
+$member-history-detail-dialog-sub-title: secondary;
+$member-history-detail-dialog-txt: #4D4D4D;
+$member-history-detail-dialog-hr: 1px solid #4D4D4D;
+$member-history-detail-dialog-close-icon: #4D4D4D;
+$member-notification-detail-dialog-datetime-bg: #bababa;
+$member-notification-detail-dialog-datetime-txt: #4D4D4D;
+$member-notification-unread-tag-bg: $member-secondary-color;
+$member-notification-unread-tag-txt: $member-fourth-color;
+
+// member game wallet page
+$member-game-wallet-transfer-btn-bg: $member-main-color;
+$member-game-wallet-transfer-btn-txt: $member-thirdary-color;
+$member-game-wallet-transfer-to-game-btn-active-bg: $member-secondary-color;
+$member-game-wallet-transfer-to-main-btn-active-bg: #2d7dc1;
+$member-game-wallet-transfer-btn-active-txt: $member-fourth-color;
+$member-game-wallet-transfer-submit-btn-bg: $member-secondary-color;
+$member-game-wallet-transfer-submit-btn-txt: $member-fourth-color;
+$member-game-wallet-balance-title-txt: #4d4d4d;
+$member-game-wallet-balance-txt: $member-secondary-color;
+$member-game-wallet-transfer-hr: $member-hr;
+$member-game-wallet-spinner: #bababa;

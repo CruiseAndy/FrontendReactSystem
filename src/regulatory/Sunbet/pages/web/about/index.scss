@@ -1,0 +1,40 @@
+.about_page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+
+  .about_page_container {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    padding: 3% 0;
+
+    .about_title {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: #c12d2e;
+    }
+
+    .about_desc {
+      font-size: 1.5rem;
+      letter-spacing: .15rem;
+    }
+
+    .about_section {
+      width: auto;
+      height: auto;
+      margin: 35px 0;
+
+      .about_section_title {
+        font-size: 2rem;
+      }
+
+      .about_section_desc {
+        font-size: 1.5rem;
+        letter-spacing: .15rem;
+      }
+    }
+  }
+}

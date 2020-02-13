@@ -1,0 +1,194 @@
+.register_page {
+  width: 100%;
+  height: auto;
+  min-height: 65%;
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+
+  .register_container {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    padding: 3% 0;
+    display: flex;
+
+    .process_step_box {
+      width: 30%;
+      min-width: 300px;
+      height: auto;
+      margin-right: 5%;
+
+      .step_group, .mobile_step_group {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .step_box {
+          width: 95%;
+          height: 100%;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          padding: 0 15px;
+
+          .step_num {
+            font-size: 6rem;
+          }
+
+          .hr {
+            width: auto;
+            height: 70%;
+            margin: 0 20px;
+          }
+
+          .step_txt {
+            font-size: 1.6rem;
+          }
+        }
+
+        .step1_triangle, .step2_triangle, .step3_triangle {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 0 10px 15px;
+        }
+      }
+
+      .mobile_step_group {
+        display: none;
+      }
+    }
+
+    .process_info_container {
+      width: 40%;
+      height: auto;
+
+      .process_info_title {
+        margin: 0 0 25px 0;
+        font-size: 2.5rem;
+      }
+
+      .info_input_box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+
+        .input_box {
+          width: 100%;
+          height: 100%;
+          min-height: 40px;
+          padding: 0 20px;
+          margin-bottom: 5px;
+
+          input {
+            width: 100%;
+            height: 100%;
+            min-height: 40px;
+            font-size: 1.7rem;
+          }
+        }
+
+        .wrong_txt {
+          font-size: 1.3rem;
+          padding-left: 20px;
+          margin: 0;
+        }
+      }
+
+      .agree_terms_container {
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .agree_icon_box {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px;
+          border-radius: 3px;
+          cursor: pointer;
+
+          .icon_agree {
+            font-size: 1.4rem;
+          }
+        }
+
+        .agree_txt_box {
+          width: auto;
+          height: 100%;
+
+          .agree_txt {
+            font-size: 1.4rem;
+            margin-right: 5px;
+          }
+
+          .agree_link_txt {
+            font-size: 1.4rem;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .register_submit_btn {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        font-size: 1.8rem;
+      }
+
+      .verify_input {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .input_box {
+          width: 70%;
+        }
+
+        .resend_btn {
+          width: auto;
+          height: 35px;
+          border-radius: 5px;
+          font-size: 1.6rem;
+          padding: 0 20px;
+        }
+      }
+
+      .user_email_box {
+        width: 100%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        .user_email_txt {
+          font-size: 1.7rem;
+          margin: 0;
+        }
+
+        .modify_email_btn {
+          width: auto;
+          height: 100%;
+          border-radius: 5px;
+          font-size: 1.6rem;
+          padding: 0 20px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1130px) {
+      .process_info_container {
+        width: 100%;
+      }
+    }
+  }
+}

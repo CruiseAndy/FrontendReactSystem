@@ -1,0 +1,156 @@
+.mobile_member_page {
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+
+  .member_page {
+    padding: 0 20px;
+
+    .member_container {
+      .member_pattern {
+        .member_menu_box {
+          display: none;
+        }
+
+        .member_content {
+          width: 100%;
+          padding: 0;
+
+          .member_info_page, .member_change_pwd_page, .member_deposit_page,
+          .member_withdraw_page, .add_bankcard_page, .member_game_wallet_page,
+          .member_main_wallet_history_page, .member_game_history_page {
+            > .info_title_box {
+              text-align: center;
+            }
+
+            .table_container {
+              .table_component {
+                .table_box {
+                  .table_data_group {
+                    border: 0;
+                  }
+                }
+              }
+            }
+
+            .info_container {
+              .profile_info_group, .bankcard_info_group {
+                min-width: inherit;
+              }
+            }
+
+            .payment_container {
+              .payment_box {
+                min-width: inherit;
+              }
+            }
+
+            .withdraw_container {
+              .withdraw_box {
+                display: block;
+
+                .bankcard_list {
+                  width: 100%;
+
+                  .mobile_bankcard_select {
+                    display: block;
+                  }
+
+                  .bankcard_group {
+                    display: none;
+                  }
+                }
+
+                .withdraw_content {
+                  width: 100%;
+                }
+              }
+            }
+
+            .game_wallet_container {
+              height: auto;
+              display: flex;
+              margin-bottom: 20px;
+
+              .transfer_mode_box {
+                width: 100%;
+                min-width: inherit;
+                height: 45px;
+                display: flex;
+                margin: 0;
+                margin-bottom: 20px;
+
+                .transfer_mode {
+                  width: 50%;
+                  height: 100%;
+
+                  .transfer_mode_btn {
+                    width: 100%;
+                  }
+
+                  .transfer_triangle {
+                    display: none;
+                  }
+                }
+              }
+
+              .transfer_amount_box {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              
+                .game_wallet_balance {
+                  width: 100%;
+                  margin-bottom: 15px;
+                  display: flex;
+                  justify-content: center;
+                }
+
+                .transfer_amount {
+                  flex-direction: column;
+
+                  .dialog_deal_adjust_box {
+                    width: 70%;
+                    height: 40px;
+                    margin-bottom: 10px;
+                  }
+
+                  .transfer_submit {
+                    width: 80%;
+                    height: 40px;
+                  }
+                }
+              }
+            }
+
+            .hr { display: none; }
+
+            .info_submit_box {
+              min-width: inherit;
+            }
+
+            .verify_step_notice_box {
+              .send_verify_code_box {
+                flex-direction: column;
+
+                .go_to_txt {
+                  margin-bottom: 10px;
+                }
+
+                .user_email_txt {
+                  margin-bottom: 10px;
+                }
+              }
+
+              .verify_desc_txt {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

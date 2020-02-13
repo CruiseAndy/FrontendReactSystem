@@ -1,0 +1,20 @@
+.mobile_forgetPwd_page {
+  width: 100%;
+  height: 100vh;
+  padding-top: 60px;
+
+  .forgetPwd_page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+
+    .forgetPwd_container {
+      .forgetPwd_box {
+        width: 100%;
+        min-width: inherit;
+      }
+    }
+  }
+}

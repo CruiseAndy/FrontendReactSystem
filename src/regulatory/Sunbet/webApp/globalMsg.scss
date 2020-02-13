@@ -1,0 +1,27 @@
+@import "../colorConfig/globalMsg.scss";
+
+.global_msg_component {
+  background-color: $global-msg-mask-bg;
+      
+  .msg_icon {
+    color: $global-error-msg-icon;
+  }
+
+  .msg_box {
+    .error_msg_box {
+      background-color: $global-error-msg-box-bg;
+
+      .msg_txt {
+        color: $global-error-msg-txt;
+      }
+    }
+
+    .info_msg_box {
+      background-color: $global-info-msg-box-bg;
+
+      .msg_txt {
+        color: $global-info-msg-txt;
+      }
+    }
+  }
+}

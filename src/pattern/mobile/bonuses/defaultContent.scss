@@ -1,0 +1,76 @@
+.ckeditor-default-content{
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  p{
+    line-height: 1.5;
+    padding-bottom: 5px;
+  }
+
+  b,strong {
+    font-weight: bold;
+  }
+
+  a {
+    opacity: .9;
+    &:hover {
+      text-decoration: underline;
+      opacity: 1;
+    }
+  }
+
+  i,em {
+    font-style: oblique;
+  }
+
+  ul,ol {
+    list-style: disc;
+    margin-bottom: 10px;
+
+    li{
+      padding-bottom: 5px;
+      margin-left: 20px;
+      line-height: 1.5;
+    }
+  }
+  ol {
+    list-style: decimal;
+  }
+
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  table{
+    width: 100%;
+  }
+
+  th,td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    padding: 8px;
+    vertical-align: middle;
+  }
+
+}
